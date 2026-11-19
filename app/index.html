@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum — GTA 6 Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true">LP</div>
+    <div>
+      <h1>Leonida Platinum</h1>
+      <p class="tagline">GTA 6 trophy guide &amp; tracker — all 55 trophies, offline, with cited guides.</p>
+    </div>
+  </div>
+  <div class="progress" aria-label="Overall progress">
+    <div class="progress-count"><span id="earned-count">0</span><span class="of"> / 55</span></div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill" style="width:0%"></div></div>
+    <div class="progress-note"><span id="platinum-pct">0% to platinum</span><span id="grade-line">0 platinum · 0 gold · 0 silver · 0 bronze</span></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Guide sections">
+  <button class="tab active" data-tab="checklist" type="button">Checklist</button>
+  <button class="tab" data-tab="roadmap" type="button">Roadmap</button>
+  <button class="tab" data-tab="missables" type="button">Missables</button>
+  <button class="tab" data-tab="progress" type="button">Progress &amp; Settings</button>
+</nav>
+
+<main>
+  <section id="tab-checklist" class="panel active" aria-label="Trophy checklist">
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search a trophy or guide…" aria-label="Search trophies">
+      <select id="kind-filter" aria-label="Filter by kind">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectible">Collectibles</option>
+        <option value="activity">Activities</option>
+        <option value="robbery">Robbery</option>
+        <option value="side-story">Side stories</option>
+        <option value="misc">Misc</option>
+      </select>
+      <select id="grade-filter" aria-label="Filter by grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+      <select id="status-filter" aria-label="Filter by status">
+        <option value="all">All statuses</option>
+        <option value="earned">Earned</option>
+        <option value="remaining">Remaining</option>
+      </select>
+      <label class="spoiler-toggle"><input id="spoiler" type="checkbox" checked> Spoiler guard on</label>
+    </div>
+    <p id="result-count" class="result-count" aria-live="polite"></p>
+    <div class="split">
+      <div id="trophy-list" class="trophy-list" role="list"></div>
+      <aside id="guide-pane" class="guide-pane" aria-label="Trophy guide"></aside>
+    </div>
+  </section>
+
+  <section id="tab-roadmap" class="panel" aria-label="Roadmap to platinum">
+    <div id="next-up" class="next-up"></div>
+    <div id="roadmap" class="roadmap"></div>
+  </section>
+
+  <section id="tab-missables" class="panel" aria-label="Missables">
+    <div id="missables" class="missables"></div>
+  </section>
+
+  <section id="tab-progress" class="panel" aria-label="Progress and settings">
+    <div id="progress-view" class="progress-view"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Unofficial fan guide. Trophy names, descriptions and grades are the official PS5 list as mirrored by Exophase and PSNProfiles. No Rockstar logo or artwork is used. Your progress is saved only in this browser (localStorage).</p>
+  <p class="foot-sources">Sources: Exophase · PSNProfiles · Output Lag · Press-Start · HowToVideoGame · CryptoGames — links on each trophy's guide.</p>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
